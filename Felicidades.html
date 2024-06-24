@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Video de Fondo e Imágenes en Movimiento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="FONDO.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+    </div>
+    <div class="neon-text" >
+        <h1>Feliz Cumpleaños!!</h1>
+        <h1>♥ NATY ♥</h1>
+    </div>
+
+    <div id="regalos">
+        <a href="#" onclick="openModal('Texto para imagen 1')"><img src="regalo.png" class="moving-image" alt="Regalo 1"></a>
+        <a href="#" onclick="openModal('Texto para imagen 2')"><img src="regalo.png" class="moving-image" alt="Regalo 2"></a>
+        <a href="#" onclick="openModal('Texto para imagen 3')"><img src="regalo.png" class="moving-image" alt="Regalo 3"></a>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

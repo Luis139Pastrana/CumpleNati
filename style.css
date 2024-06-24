@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: #fff;
+    overflow: hidden;
+}
+
+.countdown-container {
+    text-align: center;
+    margin-top: 20vh;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2em;
+}
+
+#countdown div {
+    background: #61dafb;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#fireworks-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#message {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+#photo img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+#texto{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    .countdown-container {
+        margin-top: 5vh; /* Margen superior aún más reducido */
+    }
+    
+    #countdown {
+        font-size: 1.2em; /* Tamaño de fuente aún más reducido */
+    }
+    
+    #message {
+        font-size: 1.5em; /* Tamaño de fuente aún más reducido */
+        margin-top: 5vh; /* Margen superior aún más reducido */
+    }
+    
+    #texto {
+        font-size: 20px; /* Tamaño de fuente reducido */
+        margin: 10px; /* Margen reducido */
+    }
+}
