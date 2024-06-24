@@ -1,5 +1,5 @@
 // Fecha objetivo: 24 de agosto
-const targetDate = new Date('June 24, 2024 02:35:00').getTime();
+const targetDate = new Date('June 24, 2024 14:45:00').getTime();
 
 // Actualizar el conteo cada segundo
 const countdown = setInterval(() => {
